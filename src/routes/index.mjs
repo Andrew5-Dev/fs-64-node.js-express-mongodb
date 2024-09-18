@@ -26,7 +26,7 @@ router.get('/login', (req, res) => {
 router.use('/', rootRouter)
 router.use('/login', loginRouter)
 router.use('/protected', protectedRouter)
-router.use('/users', basicAuth, usersRouter)
-router.use('/articles', basicAuth, articlesRouter)
+router.use('/users', usersRouter)
+router.use('/articles',  articlesRouter)
 
 export default router
